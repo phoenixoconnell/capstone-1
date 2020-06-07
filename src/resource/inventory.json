@@ -1,117 +1,130 @@
 [
     {
+        "id": 1,
         "name": "Belle Heel",
         "price": 150,
         "stock": 5,
-        "image": "../../resource/images/belle_heel.jpg",
+        "image": "../images/belle_heel.jpg",
         "serno": "98272",
         "category": "Heels",
         "manufacturer": "Stay Weird"
     },
     {
+        "id": 2,
         "name": "Eye See You Boot",
         "price": 200,
         "stock": 3,
-        "image": "./images/eye_see_you_boot.jpg",
+        "image": "../images/eye_see_you_boot.jpg",
         "serno": "72360",
         "category": "Boots",
         "manufacturer": "Stay Weird"
     },
     {
+        "id": 3,
         "name": "Godzilla Boot",
         "price": 200,
         "stock": 4,
-        "image": "./images/godzilla_boot.jpg",
+        "image": "../images/godzilla_boot.jpg",
         "serno": "83604",
         "category": "Boots",
         "manufacturer": "Stay Weird"
     },
     {
+        "id": 4,
         "name": "Mulan Bootie",
         "price": 150,
         "stock": 7,
-        "image": "./images/mulan_bootie.jpg",
+        "image": "../images/mulan_bootie.jpg",
         "serno": "29374",
         "category": "Booties",
         "manufacturer": "Stay Weird"
     },
     {
+        "id": 5,
         "name": "Mulan Dragon Heel",
         "price": 100,
         "stock": 5,
-        "image": "./images/mulan_dragon_heel.jpg",
+        "image": "../images/mulan_dragon_heel.jpg",
         "serno": "78356",
         "category": "Heels",
         "manufacturer": "Stay Weird"
     },
     {
+        "id": 6,
         "name": "Rainbow Lightning Heel",
         "price": 150,
         "stock": 6,
-        "image": "./images/rainbow_lightning_heel.jpg",
+        "image": "../images/rainbow_lightning_heel.jpg",
         "serno": "88365",
         "category": "Heels",
         "manufacturer": "Stay Weird"
     },
     {
+        "id": 7,
         "name": "Ramen Heel",
         "price": 100,
         "stock": 3,
-        "image": "./images/ramen_heel.jpg",
+        "image": "../images/ramen_heel.jpg",
         "serno": "25674",
         "category": "Heels",
         "manufacturer": "Stay Weird"
     },
     {
+        "id": 8,
         "name": "Rocket Boot",
         "price": 200,
         "stock": 5,
-        "image": "./images/rocket_boot.jpg",
+        "image": "../images/rocket_boot.jpg",
         "serno": "90482",
         "category": "Boots",
         "manufacturer": "Stay Weird"
     },
     {
+        "id": 9,
         "name": "Rockstar Bootie",
         "price": 150,
         "stock": 7,
-        "image": "./images/rockstar_bootie.jpg",
+        "image": "../images/rockstar_bootie.jpg",
         "serno": "37846",
         "category": "Booties",
         "manufacturer": "Stay Weird"
     },
     {
+        "id": 10,
         "name": "Seven Dwarves Heel",
         "price": 150,
         "stock": 7,
-        "image": "./images/seven_dwarves_heel.jpg",
+        "image": "../images/seven_dwarves_heel.jpg",
         "serno": "47283",
         "category": "Heels",
         "manufacturer": "Stay Weird"
     },
     {
+        "id": 11,
         "name": "Snake Platform",
         "price": 250,
         "stock": 3,
-        "image": "./images/snake_platform.jpg",
+        "image": "../images/snake_platform.jpg",
         "serno": "77283",
         "category": "Platforms",
         "manufacturer": "Stay Weird"
     },
     {
+        "id": 12,
         "name": "Ursula Heel",
         "price": 100,
         "stock": 8,
-        "image": "./images/ursula_heel.jpg",
+        "image": "../images/ursula_heel.jpg",
         "serno": "73002",
         "category": "Heels",
         "manufacturer": "Stay Weird"
     },
     {
+        "id": 13,
         "name": "Ursula Snowglobe Heel",
         "price": 300,
         "stock": 4,
-        "image": "./images/ursula_snowglobe_heel.jpg",
+        "image": "../images/ursula_snowglobe_heel.jpg",
         "serno": "66739",
         "category": "Heels",
         "manufacturer": "Stay Weird"

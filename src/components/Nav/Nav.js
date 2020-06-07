@@ -2,10 +2,12 @@
 
 import React from 'react'
 
-export default function Nav() {
+function Nav() {
     return (
         <div>
-            
+            Nav
         </div>
     )
 }
+
+export default Nav;

@@ -6,10 +6,12 @@
 
 import React from 'react'
 
-export default function Search() {
+function Search() {
     return (
         <div>
-            
+            Search
         </div>
     )
 }
+
+export default Search;

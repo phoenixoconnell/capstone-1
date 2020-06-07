@@ -6,15 +6,21 @@
 
 //Purchase quantity selected button
 
-import React from 'react';
-
+import React, { useState, useEffect } from 'react';
+import { withRouter } from 'react-router-dom'
 
 function Product(props) {
+    const [product, setProduct] = useState({});
+
+    useEffect(() => {
+        setProduct(props.getProd(props.match.params.id))
+    }, [])
+
     return (
         <div>
-
+            {product.name}
         </div>
     )
 }
 
-export default Product;
+export default withRouter(Product);

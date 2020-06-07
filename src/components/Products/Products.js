@@ -8,13 +8,13 @@
 //Clicking each card takes user to individual product page
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProductCard from '../ProductCard/ProductCard'
-import inventory from '../../resource/inventory.json';
 
 function Products(props) {
     return (
         <div>
-            {inventory.filter(v => props.search == "" ? true : props.search == v.name || props.search == v.category || props.search == v.manufacturer || props.search == v.serno).map(v => <ProductCard product={v}/>)}
+            {props.inventory.filter(v => props.search == "" ? true : props.search == v.name || props.search == v.category || props.search == v.manufacturer || props.search == v.serno).map(v => <Link to={`/product/${v.id}`}><ProductCard product={v}/></Link>)}
         </div>
     )
 }
