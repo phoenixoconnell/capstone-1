@@ -14,20 +14,46 @@ function App() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    setCartCount(cart.length)
+    console.log("added to cart!");
+    setCartCount(cart.reduce((t, v) => t + v.quantity, 0));
   }, [cart])
 
   const getProd = id => {
     return inventory.filter(v => v.id == id)[0];
   }
 
+  const updateCart = item => {
+    let index = cart.findIndex(v => v.id == item.id);
+
+    if(index != -1) {
+      let tempCart = [...cart];
+      if(item.quantity < 0) {
+        tempCart.splice(index, 1);
+        setCart([...tempCart]);
+      } else {
+        tempCart[index].quantity += item.quantity;
+        setCart(tempCart);
+      }
+    } else {
+      setCart([...cart, item]);
+    }
+  }
+
+  const clearCart = () => {
+    setCart([]);
+  }
+
+  const updateSearch = e => {
+    setSearch(e.target.value);
+  }
+
   return (
     <Router>
       <div className="App">
-        <Header cartCount={cartCount} updateSearch={setSearch} />
+        <Header cartCount={cartCount} updateSearch={updateSearch} search={search} />
         <Route exact path='/' render={() => <Products search={search} inventory={inventory} />} />
-        <Route path='/product/:id' render={() => <Product getProd={getProd} updateCart={setCart} />} />
-        <Route path='/cart' render={() => <Cart cart={cart} updateCart={setCart} />} />
+        <Route path='/product/:id' render={() => <Product getProd={getProd} updateCart={updateCart} />} />
+        <Route path='/cart' render={() => <Cart cart={cart} updateCart={updateCart} clearCart={clearCart} />} />
       </div>
     </Router>
   );

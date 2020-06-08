@@ -1,19 +1,39 @@
-//Information will come from App.js
-
-//Cart will be an array and will contain item name, price, and desired quantity
-
-//Will display grand total
-
-//Will have a button with alert for checkout
-
 import React from 'react'
+import {withRouter} from 'react-router-dom'
 
-function Cart() {
+function Cart(props) {
+
+    const checkout = () => {
+        alert('Thanks for choosing Stay Weird!\nYour order will be in the mail soon!');
+        props.clearCart();
+        props.history.push('/');
+    }
+
+    const remove = item => {
+        let temp = {
+            id: item.id,
+            quantity: -(item.quantity)
+        }
+
+        props.updateCart(temp)
+    } 
+
     return (
         <div>
-            Cart
+            {props.cart.map(v => (
+                <div key={v.id}>
+                    <h3>{v.name}</h3>
+                    <span>${v.price}</span>
+                    <span>Quantity: {v.quantity}</span>
+                    <span>Total: ${v.price * v.quantity}</span>
+                    <button onClick={() => remove(v)}>Remove from Cart</button>
+                </div>
+            ))}
+            <h1>Grand Total: {props.cart.reduce((t, v) => t + (v.price * v.quantity), 0)}</h1>
+            <button onClick={checkout}>Checkout</button>
+            <button onClick={() => props.history.push('/')}>Cancel</button>
         </div>
     )
 }
 
-export default Cart;
+export default withRouter(Cart);

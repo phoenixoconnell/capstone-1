@@ -1,11 +1,11 @@
-//Contains links to home and cart
-
 import React from 'react'
+import {Link} from 'react-router-dom';
 
-function Nav() {
+function Nav(props) {
     return (
         <div>
-            Nav
+            <Link to='/'>Home</Link>
+            <Link to='/cart'>Cart({props.cartCount})</Link>
         </div>
     )
 }

@@ -1,13 +1,13 @@
-//Contains logo, Nav component, and Cart count
-
-//Receives cart count from App.js
-
 import React from 'react'
+import Search from '../Search/Search';
+import Nav from '../Nav/Nav';
 
-function Header() {
+function Header(props) {
     return (
         <div>
-            Header
+            <span>Stay Weird</span>
+            <Search search={props.search} updateSearch={props.updateSearch} />
+            <Nav cartCount={props.cartCount} />
         </div>
     )
 }

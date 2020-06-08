@@ -1,15 +1,10 @@
-//Contains text box
-
-//Text box dynamically updates filter function in Products component
-
-//Search will be initialized as an empty string in App.js
-
 import React from 'react'
 
-function Search() {
+function Search(props) {
+
     return (
         <div>
-            Search
+            <input value={props.search} onChange={props.updateSearch} />
         </div>
     )
 }
