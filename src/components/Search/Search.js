@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import './Search.css';
 
 function Search(props) {
 
     return (
-        <div>
-            <input value={props.search} onChange={props.updateSearch} />
+        <div className="searchContainer">
+            <input placeholder="Enter search criteria here" value={props.search} onChange={props.updateSearch} />
         </div>
     )
 }

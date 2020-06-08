@@ -1,8 +1,9 @@
 import React from 'react';
+import './ProductCard.css';
 
 function ProductCard(props) {
     return (
-        <div>
+        <div className="cardContainer">
             <img src={`%PUBLIC_URL%/${props.product.image}`} alt={props.product.name} />
                 <div>
                     <h1>{props.product.name}</h1>

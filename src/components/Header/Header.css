@@ -1,0 +1,9 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100px;
+    background-color: aquamarine;
+    margin-bottom: 20px;
+}

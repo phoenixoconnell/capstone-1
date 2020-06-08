@@ -1,0 +1,13 @@
+.cardContainer {
+    width: 400px;
+    height: 500px;
+    margin: 30px;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+}
+
+.cardContainer img {
+    width: 250px;
+    height: 275px;
+    margin: 20px;
+}

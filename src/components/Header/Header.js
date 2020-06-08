@@ -1,13 +1,15 @@
-import React from 'react'
+import React from 'react';
 import Search from '../Search/Search';
 import Nav from '../Nav/Nav';
+import './Header.css';
 
 function Header(props) {
     return (
-        <div>
-            <span>Stay Weird</span>
-            <Search search={props.search} updateSearch={props.updateSearch} />
-            <Nav cartCount={props.cartCount} />
+        <div className="headerContainer">
+            <img src="stay_weird.png" alt="Stay Weird Logo" />
+            <span>Welcome to Stay Weird</span>
+            <span><Search search={props.search} updateSearch={props.updateSearch} /></span>
+            <span><Nav cartCount={props.cartCount} /></span>
         </div>
     )
 }
