@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom';
+import './Product.css';
 
 function Product(props) {
     const [product, setProduct] = useState({});
@@ -25,7 +26,7 @@ function Product(props) {
     }
 
     return (
-        <div>
+        <div className="productContainer">
             <img src={`%PUBLIC_URL%/${product.image}`} alt={product.name} />
                 <div>
                     <h1>{product.name}</h1>

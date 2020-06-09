@@ -1,13 +1,26 @@
 .cardContainer {
-    width: 400px;
-    height: 500px;
+    width: 350px;
+    height: 400px;
     margin: 30px;
     border: 2px solid blueviolet;
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(199, 241, 238);
 }
 
 .cardContainer img {
-    width: 250px;
-    height: 275px;
-    margin: 20px;
+    width: 200px;
+    height: 225px;
+    margin-top: 40px;
+    border: 2px solid blueviolet;
+    transition: transform .2s;
+}
+
+.cardContainer img:hover {
+    transform: scale(1.3);
+}
+
+.cardContainer h2 {
+    margin: 0;
 }

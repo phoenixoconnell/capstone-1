@@ -3,7 +3,14 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100vw;
-    height: 100px;
-    background-color: aquamarine;
+    height: 150px;
+    background-color: rgb(127, 107, 240);
     margin-bottom: 20px;
+    border-radius: 0 0 85% 85% / 70%;
+    position: fixed;
+}
+
+.headerContainer img {
+    width: 100px;
+    height: 100px;
 }

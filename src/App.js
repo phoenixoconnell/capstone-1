@@ -14,7 +14,6 @@ function App() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    console.log("added to cart!");
     setCartCount(cart.reduce((t, v) => t + v.quantity, 0));
   }, [cart])
 

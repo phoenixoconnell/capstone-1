@@ -22,13 +22,15 @@
 </h2>
 
 <ol>
+    <li>Fill out part 1 and 2 of UPER</li>
     <li>Decide on what products to sell</li>
     <li>Decide which bonus features will be implemented</li>
     <li>Decide on a layout for the site and create wireframes</li>
     <li>Determine what components will be needed and what will be contained in those components</li>
-    <li>Create a Trello board to track tasks</li>
-    <li>Build the components while tracking tasks on Trello</li>
+    <li>Figure out how to integrate inventory tracking using a .json file</li>
+    <li>Build the components while continuously testing functionality</li>
     <li>Test the site ensuring all task requirements have been met including bonus features</li>
+    <li>Do site styling in CSS</li>
     <li>Purchase site domain</li>
     <li>Deploy the site to Digital Ocean</li>
     <li>Present the site on due date<li>
@@ -37,14 +39,38 @@
 <h2>
     3. Executing the Plan
 </h2>
-*
-*
-*
-*
-*
-*
-*
-*
+<ul>
+    <li>Filled out part 1 and 2 of UPER</li>
+    <li>Decided that my product to sell would be weird shoes, calling the site "Stay Weird"</li>
+    <li>Decided to implement images and full search bonus functionality with API integration as a reach feature</li>
+    <li>Researched different layout templates and decided on a layout</li>
+    <li>Determined that I would need Header, Nav, Search, Product, ProductCard, Products, and Cart components</li>
+    <li>Researched linking quantity tracking with .json</li>
+    <li>Installed Create React App to begin project</li>
+    <li>Created inventory.json file with array of objects containing my product information</li>
+    <li>Attempted to use a creative method to switch between pages and could not implement due to useEffect creating an infinite refresh loop</li>
+    <li>Decided to use routing for page viewing and installed react-router-dom</li>
+    <li>Created routes for Products, Product, and Cart components in App.js</li>
+    <li></li>
+    <li></li>
+    <li>Ran into issue of images not displaying in ProductCard and Product, received help from another student to determine that I had to move my images into the Public folder and change my file paths in the inventory.json file and correct the img src naming</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>Ran into issue of pressing the delete button crashing the site, finally determined I was using setCart instead of updateCart in Cart render method in App.js</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>Added toLowerCase to Products filter because it is unlikely the user is going to capitalize their search terms</li>
+    <li>Added clearCart and updateSearch functions in App.js and implemented them in routing</li>
+    <li>Added skeleton CSS for site layout</li>
+    <li>Ran into issue of logo image not displaying from Public folder, moved the file to the Header component folder but still the image would not display. Finally determined that I had not imported the file for use</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li>Filled out part 3 of UPER as I worked</li>
+</ul>
 <h2>
     4. Reflection / Refactor
 </h2>
