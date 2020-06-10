@@ -1,5 +1,30 @@
+@font-face {
+    font-family: 'uncanny';
+    src: url("../../UncannyRegular.ttf") format("truetype"), url("../../UncannyRegular.woff") format("woff");
+  }
+
+.productContainer {
+    font: 100% uncanny;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .productContainer img {
     width: 300px;
     height: 375px;
     margin-top: 170px;
+    margin-right: 20px;
+}
+
+.productContainer h1{
+    margin: 0;
+}
+
+.productContainer h2{
+    margin: 0;
+}
+
+.productInfo {
+    margin-top: 175px;
 }

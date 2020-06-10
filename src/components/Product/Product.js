@@ -26,13 +26,16 @@ function Product(props) {
     }
 
     const back = () => {
-        props.history.push('/');
+        props.history.push('/products');
     }
 
     //Public_url used to grab images from Public folder
     return (
         <div className="productContainer">
-            <img src={`%PUBLIC_URL%/${product.image}`} alt={product.name} />
+            <div>
+                <img src={`%PUBLIC_URL%/${product.image}`} alt={product.name} />
+            </div>
+            <div className="productInfo">
                 <div>
                     <h1>{product.name}</h1>
                     <h2>${product.price}</h2>
@@ -48,6 +51,7 @@ function Product(props) {
                     <button onClick={addToCart}>Add to Cart</button>
                     <button onClick={back}>Keep Shopping</button>
                 </div>
+            </div>
         </div>
     )
 }

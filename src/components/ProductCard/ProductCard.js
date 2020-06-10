@@ -10,7 +10,7 @@ function ProductCard(props) {
                 <div>
                     <h2>{props.product.name}</h2>
                     <h2>${props.product.price}</h2>
-                    {props.product.stock <= 3 ? <span>Only {props.product.stock} left!</span> : null}
+                    {props.product.stock <= 3 ? <span className="limitedStock">Only {props.product.stock} left!</span> : null}
                 </div>
         </div>
     )

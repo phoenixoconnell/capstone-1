@@ -76,20 +76,24 @@
     <li>Ran into issue of logo image not displaying from Public folder, moved the file to the Header component folder but still the image would not display. Finally determined that I had not imported the file for use</li>
     <li>Adjusted Product component to reflect current quantity in stock</li>
     <li>Updated addToCart process to update inventory when items are added to cart</li>
+    <li>Added landing page for site</li>
+    <li>Updated routing to reflect Landing page</li>
+    <li>Fixed Cart view and Nav to return to Products view</li>
+    <li>Added custom font to all pages</li>
     <li></li>
     <li></li>
     <li></li>
-    <li></li>
+    <li>Finished styling for all pages</li>
+    <li>Tested all functionality for site</li>
+    <li>Prepared for presentation of site</li>
     <li>Filled out part 3 of UPER as I worked</li>
 </ul>
 <h2>
     4. Reflection / Refactor
 </h2>
-*
-*
-*
-*
-*
-*
-*
-*
+<ul>
+    <li>Building would have had been easier if I had decided to use landing page in planning phase</li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>

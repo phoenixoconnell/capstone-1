@@ -1,5 +1,5 @@
 import React from 'react'
-import {withRouter} from 'react-router-dom'
+import {withRouter, Link} from 'react-router-dom'
 import './Cart.css';
 
 function Cart(props) {
@@ -32,9 +32,10 @@ function Cart(props) {
                     <button onClick={() => remove(v)}>Remove from Cart</button>
                 </div>
             ))}
-            <h1>Grand Total: ${props.cart.reduce((t, v) => t + (v.price * v.quantity), 0)}</h1>
+            <h1>Cart Total: ${props.cart.reduce((t, v) => t + (v.price * v.quantity), 0)}</h1>
             <button onClick={checkout}>Checkout</button>
-            <button onClick={() => props.history.push('/')}>Cancel</button>
+            {/* <button onClick={() => props.history.push('/products')}>Keep Shopping</button> */}
+            <Link to="/products"><button>Keep Shopping</button></Link>
         </div>
     )
 }

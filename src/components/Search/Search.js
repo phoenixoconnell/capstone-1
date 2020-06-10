@@ -5,7 +5,7 @@ function Search(props) {
 
     return (
         <div className="searchContainer">
-            <input placeholder="Enter search criteria here" value={props.search} onChange={props.updateSearch} />
+            <input placeholder="Enter search criteria here" size="30" value={props.search} onChange={props.updateSearch} />
         </div>
     )
 }
