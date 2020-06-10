@@ -4,40 +4,68 @@ import Header from './components/Header/Header'
 import Products from './components/Products/Products';
 import Product from './components/Product/Product';
 import Cart from './components/Cart/Cart';
-import inventory from './resource/inventory.json';
+import store from './resource/inventory.json';
 import './App.css';
 
 function App() {
   const [cart, setCart] = useState([]);
   const [cartCount, setCartCount] = useState(0);
-  const [prod, setProd] = useState({});
+  const [inventory, setInventory] = useState(store);
   const [search, setSearch] = useState("");
 
+  //Updates cart count when an item is added to the cart
   useEffect(() => {
     setCartCount(cart.reduce((t, v) => t + v.quantity, 0));
   }, [cart])
 
+  useEffect(() => {
+    console.log(cart, inventory);
+  }, [cart, inventory])
+
+  //Gets product from inventory based on id and sends to Product component
   const getProd = id => {
     return inventory.filter(v => v.id == id)[0];
   }
 
+  //Updates cart based on user input
+  //Adds an item to the cart if it is not already in the cart
+  //If an item is in the cart, updates quantity of the item
+  //If passed in quantity is negative, removes the item from the cart
   const updateCart = item => {
-    let index = cart.findIndex(v => v.id == item.id);
+    console.log("not a function?:", inventory);
+    let cartIndex = cart.findIndex(v => v.id == item.id);
+    let invIndex = inventory.findIndex(v => v.id == item.id);
+    let tempInv = [...inventory];
 
-    if(index != -1) {
+    if(cartIndex != -1) {
+      //Need to reset the stock in inventory here
       let tempCart = [...cart];
       if(item.quantity < 0) {
-        tempCart.splice(index, 1);
+        tempCart.splice(cartIndex, 1);
         setCart([...tempCart]);
       } else {
-        tempCart[index].quantity += item.quantity;
+        let prod = tempInv[invIndex];
+        prod.stock -= item.quantity;
+        tempInv.splice(invIndex, 1);
+
+        tempCart[cartIndex].quantity += item.quantity;
         setCart(tempCart);
+        setInventory([...tempInv, prod]);
+        // console.log(tempCart, item);
       }
     } else {
+      let prod = tempInv[invIndex];
+      prod.stock -= item.quantity;
+      tempInv.splice(invIndex, 1);
+
+      console.log("logging temp inventory", tempInv);
+
       setCart([...cart, item]);
+      setInventory([...tempInv, prod]);
     }
   }
 
+  //Empties the cart on checkout
   const clearCart = () => {
     setCart([]);
   }

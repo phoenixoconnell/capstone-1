@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import ProductCard from '../ProductCard/ProductCard';
 import './Products.css';
 
+//Search term filters inventory
+//Ternary returns all products from filter if search string is empty
+//Otherwise ternary applies filter using search string to all searchable categories of data
+//Map is chained to the end of the filter to display search results or all products
 function Products(props) {
     return (
         <div className="productsContainer">

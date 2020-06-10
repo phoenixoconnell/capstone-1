@@ -7,17 +7,21 @@ function Product(props) {
     const [quantity, setQuantity] = useState(1);
     const ops = [];
 
+    //Getting clicked on product from inventory
     useEffect(() => {
         setProduct(props.getProd(props.match.params.id))
     }, [])
 
+    //Getting quantity options for select tag
     for(let i = 1; i <= 10; i++) {
         ops.push(<option key={i} value={i}>{i}</option>)
     }
 
+    //AddToCart adds quantity key value pair for tracking in cart array
     const addToCart = () => {
-        let temp = product;
-        product.quantity = quantity;
+        let temp = {...product};
+        temp.quantity = quantity;
+        console.log(quantity, temp);
         props.updateCart(temp);
     }
 
@@ -25,13 +29,14 @@ function Product(props) {
         props.history.push('/');
     }
 
+    //Public_url used to grab images from Public folder
     return (
         <div className="productContainer">
             <img src={`%PUBLIC_URL%/${product.image}`} alt={product.name} />
                 <div>
                     <h1>{product.name}</h1>
                     <h2>${product.price}</h2>
-                    {product.stock <= 3 ? <span>Only {product.stock} left!</span> : null}
+                    <h2>Quantity in Stock: {product.stock}</h2>
                     <h2>Category: {product.category}</h2>
                     <h2>Serial Number: {product.serno}</h2>
                     <h2>Manufacturer: {product.manufacturer}</h2>

@@ -1,6 +1,8 @@
 import React from 'react';
 import './ProductCard.css';
 
+//Public_url used to grab images from Public folder
+//Ternary is used to determine if low stock notification should be displayed
 function ProductCard(props) {
     return (
         <div className="cardContainer">

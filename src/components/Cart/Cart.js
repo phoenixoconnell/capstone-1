@@ -1,5 +1,6 @@
 import React from 'react'
 import {withRouter} from 'react-router-dom'
+import './Cart.css';
 
 function Cart(props) {
 
@@ -9,6 +10,7 @@ function Cart(props) {
         props.history.push('/');
     }
 
+    //Passes stub product object with id of item to be removed and negative item quantity to indicate removal
     const remove = item => {
         let temp = {
             id: item.id,
@@ -18,8 +20,9 @@ function Cart(props) {
         props.updateCart(temp)
     } 
 
+    //Grand Total of cart is calculated with an array reduce method that tallies the price and quantity of each line item and adds them together
     return (
-        <div>
+        <div id="cart">
             {props.cart.map(v => (
                 <div key={v.id}>
                     <h3>{v.name}</h3>
@@ -29,11 +32,12 @@ function Cart(props) {
                     <button onClick={() => remove(v)}>Remove from Cart</button>
                 </div>
             ))}
-            <h1>Grand Total: {props.cart.reduce((t, v) => t + (v.price * v.quantity), 0)}</h1>
+            <h1>Grand Total: ${props.cart.reduce((t, v) => t + (v.price * v.quantity), 0)}</h1>
             <button onClick={checkout}>Checkout</button>
             <button onClick={() => props.history.push('/')}>Cancel</button>
         </div>
     )
 }
 
+//WithRouter included for history push to Products component
 export default withRouter(Cart);
