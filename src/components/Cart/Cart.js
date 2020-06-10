@@ -5,7 +5,7 @@ import './Cart.css';
 function Cart(props) {
 
     const checkout = () => {
-        alert('Thanks for choosing Stay Weird!\nYour order will be in the mail soon!');
+        alert('Thanks for choosing Stay Weird!\nYour order is confirmed!');
         props.clearCart();
         props.history.push('/');
     }

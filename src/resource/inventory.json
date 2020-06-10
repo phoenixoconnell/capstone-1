@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Belle Heel",
-        "price": 150,
+        "price": 149.99,
         "stock": 5,
         "image": "../images/belle_heel.jpg",
         "serno": "98272",
@@ -12,7 +12,7 @@
     {
         "id": 2,
         "name": "Eye See You Boot",
-        "price": 200,
+        "price": 179.99,
         "stock": 3,
         "image": "../images/eye_see_you_boot.jpg",
         "serno": "72360",
@@ -22,7 +22,7 @@
     {
         "id": 3,
         "name": "Godzilla Boot",
-        "price": 200,
+        "price": 199.99,
         "stock": 4,
         "image": "../images/godzilla_boot.jpg",
         "serno": "83604",
@@ -32,7 +32,7 @@
     {
         "id": 4,
         "name": "Mulan Bootie",
-        "price": 150,
+        "price": 149.99,
         "stock": 7,
         "image": "../images/mulan_bootie.jpg",
         "serno": "29374",
@@ -42,7 +42,7 @@
     {
         "id": 5,
         "name": "Mulan Dragon Heel",
-        "price": 100,
+        "price": 99.99,
         "stock": 5,
         "image": "../images/mulan_dragon_heel.jpg",
         "serno": "78356",
@@ -52,7 +52,7 @@
     {
         "id": 6,
         "name": "Rainbow Lightning Heel",
-        "price": 150,
+        "price": 149.99,
         "stock": 6,
         "image": "../images/rainbow_lightning_heel.jpg",
         "serno": "88365",
@@ -62,7 +62,7 @@
     {
         "id": 7,
         "name": "Ramen Heel",
-        "price": 100,
+        "price": 99.99,
         "stock": 3,
         "image": "../images/ramen_heel.jpg",
         "serno": "25674",
@@ -72,7 +72,7 @@
     {
         "id": 8,
         "name": "Rocket Boot",
-        "price": 200,
+        "price": 179.99,
         "stock": 5,
         "image": "../images/rocket_boot.jpg",
         "serno": "90482",
@@ -82,7 +82,7 @@
     {
         "id": 9,
         "name": "Rockstar Bootie",
-        "price": 150,
+        "price": 149.99,
         "stock": 7,
         "image": "../images/rockstar_bootie.jpg",
         "serno": "37846",
@@ -92,7 +92,7 @@
     {
         "id": 10,
         "name": "Seven Dwarves Heel",
-        "price": 150,
+        "price": 129.99,
         "stock": 7,
         "image": "../images/seven_dwarves_heel.jpg",
         "serno": "47283",
@@ -102,7 +102,7 @@
     {
         "id": 11,
         "name": "Snake Platform",
-        "price": 250,
+        "price": 229.99,
         "stock": 3,
         "image": "../images/snake_platform.jpg",
         "serno": "77283",
@@ -112,7 +112,7 @@
     {
         "id": 12,
         "name": "Ursula Heel",
-        "price": 100,
+        "price": 99.99,
         "stock": 8,
         "image": "../images/ursula_heel.jpg",
         "serno": "73002",
@@ -122,7 +122,7 @@
     {
         "id": 13,
         "name": "Ursula Snowglobe Heel",
-        "price": 300,
+        "price": 249.99,
         "stock": 4,
         "image": "../images/ursula_snowglobe_heel.jpg",
         "serno": "66739",

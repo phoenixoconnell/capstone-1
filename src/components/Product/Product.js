@@ -38,11 +38,11 @@ function Product(props) {
             <div className="productInfo">
                 <div>
                     <h1>{product.name}</h1>
-                    <h2>${product.price}</h2>
-                    <h2>Quantity in Stock: {product.stock}</h2>
-                    <h2>Category: {product.category}</h2>
-                    <h2>Serial Number: {product.serno}</h2>
-                    <h2>Manufacturer: {product.manufacturer}</h2>
+                    <p>${product.price}</p>
+                    <p>Quantity in Stock: {product.stock}</p>
+                    <p>Category: {product.category}</p>
+                    <p>Serial Number: {product.serno}</p>
+                    <p>Manufacturer: {product.manufacturer}</p>
                 </div>
                 <div>
                     <select value={quantity} onChange={e => setQuantity(e.target.value)}>

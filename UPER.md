@@ -31,11 +31,10 @@
     <li>Build the components while continuously testing functionality</li>
     <li>Test the site ensuring all task requirements have been met including bonus features</li>
     <li>Do site styling in CSS</li>
-    <li>Purchase site domain</li>
-    <li>Deploy the site to Digital Ocean</li>
+    <li>Purchase site domain - reach</li>
+    <li>Deploy the site to Digital Ocean - reach</li>
     <li>Present the site on due date<li>
-<ol>
-
+</ol>
 <h2>
     3. Executing the Plan
 </h2>
@@ -80,12 +79,16 @@
     <li>Updated routing to reflect Landing page</li>
     <li>Fixed Cart view and Nav to return to Products view</li>
     <li>Added custom font to all pages</li>
+    <li>Conditionally rendered header to not display on the Landing page</li>
     <li></li>
     <li></li>
     <li></li>
-    <li>Finished styling for all pages</li>
+    <li></li>
+    <li></li>
+    <li>Finished basic styling for all pages</li>
+    <li></li>
     <li>Tested all functionality for site</li>
-    <li>Prepared for presentation of site</li>
+    <li>Prepared and practiced presentation of site</li>
     <li>Filled out part 3 of UPER as I worked</li>
 </ul>
 <h2>
