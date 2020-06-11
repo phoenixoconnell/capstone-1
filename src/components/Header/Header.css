@@ -6,8 +6,8 @@
 .headerContainer {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100vw;
+    justify-content: space-between;
+    width: 99vw;
     height: 150px;
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     margin-bottom: 20px;
@@ -17,11 +17,18 @@
     font-size: 50px;
 }
 
-.headerContainer img {
-    width: 100px;
-    height: 100px;
+.headerContainer div {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
 }
 
-.logoSpan {
-    margin-left: 500px;
+.headerContainer img {
+    width: 100px;
+    height: 125px;
 }
+
+/* .logoSpan {
+    margin-left: 500px;
+} */

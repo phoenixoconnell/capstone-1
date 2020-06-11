@@ -19,9 +19,13 @@ function App() {
     setCartCount(cart.reduce((t, v) => t + v.quantity, 0));
   }, [cart])
 
+  // useEffect(() => {
+  //   console.log(cart, inventory);
+  // }, [cart, inventory])
+
   useEffect(() => {
-    console.log(cart, inventory);
-  }, [cart, inventory])
+    console.log(cartCount)
+  }, [cartCount])
 
   //Gets product from inventory based on id and sends to Product component
   const getProd = id => {
@@ -74,9 +78,9 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header cartCount={cartCount} updateSearch={updateSearch} search={search} />
+        <Header cartCount={cartCount}  />
         <Route exact path='/' render={() => <Landing />} />
-        <Route path='/products' render={() => <Products search={search} inventory={inventory} />} />
+        <Route path='/products' render={() => <Products search={search} inventory={inventory} updateSearch={updateSearch} search={search} />} />
         <Route path='/product/:id' render={() => <Product getProd={getProd} updateCart={updateCart} />} />
         <Route path='/cart' render={() => <Cart cart={cart} updateCart={updateCart} clearCart={clearCart} />} />
       </div>

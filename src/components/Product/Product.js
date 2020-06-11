@@ -13,16 +13,17 @@ function Product(props) {
     }, [])
 
     //Getting quantity options for select tag
-    for(let i = 1; i <= 10; i++) {
+    for(let i = 1; i <= product.stock; i++) {
         ops.push(<option key={i} value={i}>{i}</option>)
     }
 
     //AddToCart adds quantity key value pair for tracking in cart array
     const addToCart = () => {
         let temp = {...product};
-        temp.quantity = quantity;
+        temp.quantity = parseInt(quantity);
         console.log(quantity, temp);
         props.updateCart(temp);
+        setQuantity(1);
     }
 
     const back = () => {
@@ -48,7 +49,7 @@ function Product(props) {
                     <select value={quantity} onChange={e => setQuantity(e.target.value)}>
                         {ops}
                     </select>
-                    <button onClick={addToCart}>Add to Cart</button>
+                    <button onClick={addToCart} disabled={product.stock > 0 && product.stock >= parseInt(quantity) ? false : true}>{product.stock > 0 && product.stock >= parseInt(quantity) ? 'Add to Cart' : 'Out of Stock!'}</button>
                     <button onClick={back}>Keep Shopping</button>
                 </div>
             </div>

@@ -44,6 +44,7 @@
     <li>Decided to implement images and full search bonus functionality with API integration as a reach feature</li>
     <li>Researched different layout templates and decided on a layout</li>
     <li>Determined that I would need Header, Nav, Search, Product, ProductCard, Products, and Cart components</li>
+    <li>Sketched out wireframes</li>
     <li>Researched linking quantity tracking with .json</li>
     <li>Installed Create React App to begin project</li>
     <li>Created inventory.json file with array of objects containing my product information</li>
@@ -80,8 +81,10 @@
     <li>Fixed Cart view and Nav to return to Products view</li>
     <li>Added custom font to all pages</li>
     <li>Conditionally rendered header to not display on the Landing page</li>
-    <li></li>
-    <li></li>
+    <li>Changed quanitity select drop down to integer value for adding to cart from Product to correctly calculate cart count</li>
+    <li>Added functionality for when inventory stock count is zero</li>
+    <li>Added conditional rendering of quantity options based on stock count</li>
+    <li>Added alert functionality for attempted checkout with empty cart</li>
     <li></li>
     <li></li>
     <li></li>
