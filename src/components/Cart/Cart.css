@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'uncanny';
+    src: url("../../UncannyRegular.ttf") format("truetype"), url("../../UncannyRegular.woff") format("woff");
+  }
+
+.cartContainer {
+    font: 100% uncanny;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.cartItemContainer img {
+    width: 150px;
+    height: 175px;
+    margin-right: 20px;
+}
+
+.cartContainer button {
+    background-color: rgb(233, 8, 83);
+    border: 2px solid rgb(233, 8, 83);
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(168, 67, 101);
+    font: 100% uncanny;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.cartItemContainer {
+    font: 100% uncanny;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.cartItemInfo {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.cartItemInfo button {
+    background-color: rgb(233, 8, 83);
+    border: 2px solid rgb(233, 8, 83);
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(168, 67, 101);
+    font: 100% uncanny;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.stripeButton {
+    margin-top: 20px;
+}

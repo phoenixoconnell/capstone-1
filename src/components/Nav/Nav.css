@@ -1,0 +1,25 @@
+.homeLink {
+    margin-right: 50px;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+@media (max-width: 1100px) {
+    .homeLink {
+        margin-right: 10px;
+    }
+}
