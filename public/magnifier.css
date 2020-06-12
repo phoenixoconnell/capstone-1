@@ -4,7 +4,8 @@
 .magnifier {
     /* overflow: hidden; */
     position: relative;
-    margin-top: -170px;
+    margin-top: -200px;
+    margin-right: 20px;
   }
   
   /* style for the DIV that is the magnifier lens */
@@ -19,8 +20,6 @@
   .magsmall {
     position: absolute; 
     border-style: none;
-    width: 300px;
-    height: 375px;
   }
   
   /* style for the magnified image, using a clip rectangle */

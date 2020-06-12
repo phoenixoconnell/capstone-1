@@ -1,5 +1,6 @@
 import React from 'react';
 import {withRouter, Link} from 'react-router-dom';
+import StripeCheckout from 'react-stripe-checkout';
 import './Cart.css';
 
 function Cart(props) {
@@ -23,6 +24,22 @@ function Cart(props) {
 
         props.updateCart(temp)
     } 
+    
+    const grandTotal = props.cart.reduce((t, v) => t + (v.price * v.quantity), 0)
+
+    const onToken = token => {
+        props.clearCart()
+        console.log(token)
+        // dispatch(purchaseMade(cart))
+        // dispatch(emptyCart()); 
+        // toast.success("Thanks for purchasing from somerton.com", {
+        //    closeButton: false,
+        //    transition: Zoom,
+        //    className: 'cart-toastify',
+        //    position: "top-center",
+        //    autoClose: 2000,
+        // })
+     }
 
     //Grand Total of cart is calculated with an array reduce method that tallies the price and quantity of each line item and adds them together
     return (
@@ -40,9 +57,22 @@ function Cart(props) {
                 </div>
             ))}
             <div className="checkoutContainer">
-                <h1>Cart Total: ${props.cart.reduce((t, v) => t + (v.price * v.quantity), 0)}</h1>
-                <button onClick={checkout}>Checkout</button>
-                <button onClick={() => props.history.push('/products')}>Keep Shopping</button>
+                <div className="stripeButton">
+                    {/* <h1>Cart Total: ${props.cart.reduce((t, v) => t + (v.price * v.quantity), 0)}</h1> */}
+                    {/* <button onClick={checkout}>Checkout</button> */}
+                    <StripeCheckout name='Stay Weird' description='making a payment' 
+                    stripeKey='pk_test_Syf0NZeZFNpsmNmcoGCC9D7500Ek6o36XW' 
+                    token={onToken} 
+                    //    image={logo}
+                    amount={grandTotal*100} panelLabel="Submit Payment" 
+                    allowRememberMe={true} billingAddress={false} zipCode={false}
+                    // opened={onOpened} closed={onClosed}
+                    >
+                    </StripeCheckout>
+                </div>
+                <div>
+                    <button onClick={() => props.history.push('/products')}>Keep Shopping</button>
+                </div>
             </div>
         </div>
     )

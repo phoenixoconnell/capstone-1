@@ -31,8 +31,6 @@
     <li>Build the components while continuously testing functionality</li>
     <li>Test the site ensuring all task requirements have been met including bonus features</li>
     <li>Do site styling in CSS</li>
-    <li>Purchase site domain - reach</li>
-    <li>Deploy the site to Digital Ocean - reach</li>
     <li>Present the site on due date<li>
 </ol>
 <h2>
@@ -44,7 +42,7 @@
     <li>Decided to implement images and full search bonus functionality with API integration as a reach feature</li>
     <li>Researched different layout templates and decided on a layout</li>
     <li>Determined that I would need Header, Nav, Search, Product, ProductCard, Products, and Cart components</li>
-    <li>Sketched out wireframes</li>
+    <li>Drew wireframes for Products, Product, and Cart views</li>
     <li>Researched linking quantity tracking with .json</li>
     <li>Installed Create React App to begin project</li>
     <li>Created inventory.json file with array of objects containing my product information</li>
@@ -87,7 +85,7 @@
     <li>Added alert functionality for attempted checkout with empty cart</li>
     <li>Finished styling for all pages</li>
     <li>Added media queries for responsiveness</li>
-    <li></li>
+    <li>Added Stripe functionality for checkout and removed original alert functionality</li>
     <li>Tested all functionality for site</li>
     <li>Prepared and practiced presentation of site</li>
     <li>Filled out part 3 of UPER as I worked</li>
@@ -97,7 +95,6 @@
 </h2>
 <ul>
     <li>Building would have had been less complicated if I had decided to use landing page in the planning phase as I had to refactor some of my code to incorporate it</li>
-    <li>Would have liked to have gotten Stripe to work. I will continue to work on that on my own time</li>
-    <li></li>
-    <li></li>
+    <li>I had to refactor some code in my checkout functionality when I finally got Stripe working</li>
+    <li>Would have liked to have gotten image magnification on the Product page to work but it caused a glitch I wasn't able to fix prior to presentation. I will continue to work on that on my own time</li>
 </ul>

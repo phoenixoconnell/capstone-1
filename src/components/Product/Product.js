@@ -32,11 +32,7 @@ function Product(props) {
     //Public_url used to grab images from Public folder
     return (
         <div className="productContainer">
-            <div className="magnifier" style={{width: "300px", height: "375px"}}>
-                <div className="maglens">
-                    <img src={`%PUBLIC_URL%/${product.image}`} alt={product.name} className="maglarge" style={{width: "600px", height: "750px"}} />
-                </div>
-            </div>
+                <img src={`%PUBLIC_URL%/${product.image}`} alt={product.name} />
             <div className="productInfo">
                 <div>
                     <h1>{product.name}</h1>
