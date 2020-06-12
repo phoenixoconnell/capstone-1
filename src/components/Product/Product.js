@@ -17,11 +17,10 @@ function Product(props) {
         ops.push(<option key={i} value={i}>{i}</option>)
     }
 
-    //AddToCart adds quantity key value pair for tracking in cart array
+    //AddToCart adds quantity key value pair for tracking in cart array using temp array to spread product array then resets the value for the drop down once an item has been added to the cart
     const addToCart = () => {
         let temp = {...product};
         temp.quantity = parseInt(quantity);
-        console.log(quantity, temp);
         props.updateCart(temp);
         setQuantity(1);
     }

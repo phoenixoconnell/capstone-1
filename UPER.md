@@ -88,7 +88,7 @@
     <li></li>
     <li></li>
     <li></li>
-    <li>Finished basic styling for all pages</li>
+    <li>Finished styling for all pages</li>
     <li></li>
     <li>Tested all functionality for site</li>
     <li>Prepared and practiced presentation of site</li>
@@ -98,8 +98,8 @@
     4. Reflection / Refactor
 </h2>
 <ul>
-    <li>Building would have had been easier if I had decided to use landing page in planning phase</li>
-    <li></li>
+    <li>Building would have had been less complicated if I had decided to use landing page in the planning phase as I had to refactor some of my code to incorporate it</li>
+    <li>Wouldl have liked to have gotten Stripe to work. I will continue to work on that on my own time</li>
     <li></li>
     <li></li>
 </ul>

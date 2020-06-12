@@ -17,3 +17,9 @@ a:hover {
 a:active {
     color: black;
 }
+
+@media (max-width: 1100px) {
+    .homeLink {
+        margin-right: 10px;
+    }
+}

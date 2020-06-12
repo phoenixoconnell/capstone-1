@@ -26,20 +26,24 @@ function Cart(props) {
 
     //Grand Total of cart is calculated with an array reduce method that tallies the price and quantity of each line item and adds them together
     return (
-        <div id="cart">
+        <div className="cartContainer">
             {props.cart.map(v => (
-                <div key={v.id}>
+                <div className="cartItemContainer" key={v.id}>
                     <img src={`%PUBLIC_URL%/${v.image}`} alt={v.name} />
-                    <h3>{v.name}</h3>
-                    <span>${v.price}</span>
-                    <span>Quantity: {v.quantity}</span>
-                    <span>Total: ${v.price * v.quantity}</span>
-                    <button onClick={() => remove(v)}>Remove from Cart</button>
+                    <div className="cartItemInfo">
+                        <h3>{v.name}</h3>
+                        <span>${v.price}</span>
+                        <span>Quantity: {v.quantity}</span>
+                        <span>Total: ${v.price * v.quantity}</span>
+                        <button onClick={() => remove(v)}>Remove from Cart</button>
+                    </div>
                 </div>
             ))}
-            <h1>Cart Total: ${props.cart.reduce((t, v) => t + (v.price * v.quantity), 0)}</h1>
-            <button onClick={checkout}>Checkout</button>
-            <button onClick={() => props.history.push('/products')}>Keep Shopping</button>
+            <div className="checkoutContainer">
+                <h1>Cart Total: ${props.cart.reduce((t, v) => t + (v.price * v.quantity), 0)}</h1>
+                <button onClick={checkout}>Checkout</button>
+                <button onClick={() => props.history.push('/products')}>Keep Shopping</button>
+            </div>
         </div>
     )
 }

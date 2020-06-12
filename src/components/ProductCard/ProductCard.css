@@ -33,6 +33,8 @@
 
 .limitedStock {
     color: red;
+    font-size: larger;
+    font-weight: bold;
 }
 
 .limitedStock:visited {
