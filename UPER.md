@@ -85,10 +85,8 @@
     <li>Added functionality for when inventory stock count is zero</li>
     <li>Added conditional rendering of quantity options based on stock count</li>
     <li>Added alert functionality for attempted checkout with empty cart</li>
-    <li></li>
-    <li></li>
-    <li></li>
     <li>Finished styling for all pages</li>
+    <li>Added media queries for responsiveness</li>
     <li></li>
     <li>Tested all functionality for site</li>
     <li>Prepared and practiced presentation of site</li>
@@ -99,7 +97,7 @@
 </h2>
 <ul>
     <li>Building would have had been less complicated if I had decided to use landing page in the planning phase as I had to refactor some of my code to incorporate it</li>
-    <li>Wouldl have liked to have gotten Stripe to work. I will continue to work on that on my own time</li>
+    <li>Would have liked to have gotten Stripe to work. I will continue to work on that on my own time</li>
     <li></li>
     <li></li>
 </ul>
